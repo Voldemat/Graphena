@@ -1,0 +1,25 @@
+*{
+    margin:0;
+    padding:0;
+    border:none;
+    outline: none;
+    box-sizing: border-box;
+    background-color: var(--white);
+    color:var(--royal-blue);
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --white:#E7EEF6;
+    --fun-blue:#185297;
+    --royal-blue:#3A85DB;
+    --light-green:#74BCAC;
+}
+#root{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+main{
+    flex: 1;
+}

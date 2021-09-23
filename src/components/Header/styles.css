@@ -1,0 +1,60 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    width:100%;
+    top:0;
+    left:0;
+    padding:15px 50px;
+
+    background-color: var(--fun-blue);
+    color:var(--white);
+    border-bottom: 5px solid var(--fun-blue);
+
+    transition: color 0.5s ease,
+                background-color 0.5s ease 0.5s,
+                border-color 0.5s ease 0.5s,
+                padding 0.5s ease;
+
+    z-index: 10000;
+}
+header *{
+    color:inherit;
+    background-color: transparent;
+    transition: inherit;
+}
+
+header.scroll{
+    padding:5px 20px;
+
+    background-color: var(--white);
+    color:var(--royal-blue);
+
+    border-color:var(--royal-blue);
+}
+
+
+header .logo{
+    font-size:3.3em;
+    font-family: 'Gemunu Libre', sans-serif;
+    font-weight:600;
+    letter-spacing: 2px;
+}
+header nav{
+    display: flex;
+    flex:auto;
+    justify-content: right;
+    align-items: center;
+}
+header nav a{
+    margin-top:auto;
+    margin-bottom:auto;
+    margin-right:50px;
+    font-size:1.3em;
+    font-weight:500;
+    letter-spacing: 2px;
+}
+
+footer{
+    margin-bottom:900px;
+}
