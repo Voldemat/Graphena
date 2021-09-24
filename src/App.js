@@ -14,7 +14,7 @@ export default function App(){
             <MathJax.Provider>
                 <Header />
                 <Main />
-                <Footer />
+                {/* <Footer /> */}
             </MathJax.Provider>
         </>
     )
