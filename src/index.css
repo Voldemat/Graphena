@@ -31,7 +31,9 @@ body{
 main{
     flex: 1;
 }
-
+input{
+    -webkit-appearance: none;
+}
 button.try{
     padding:20px 30px;
     background-color: var(--fun-blue);
