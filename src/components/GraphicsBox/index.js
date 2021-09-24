@@ -47,7 +47,9 @@ export default function GraphicsBox(){
     return (<>
         <section className="graphic-box">
             <h1>Draw 2D Graphic</h1>
-            <Graphic formula={formula} />
+            <div className="wrapper">
+                <Graphic formula={formula}/>
+            </div>
 
             <form onSubmit={(e) => e.preventDefault()}>
                 <input type="text" name="formula" ref={inputRef} placeholder="y=2x"/>

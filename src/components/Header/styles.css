@@ -58,3 +58,8 @@ header nav a{
 footer{
     margin-bottom:900px;
 }
+
+
+@media screen and (max-width:780px){
+    header nav{display:none}
+}

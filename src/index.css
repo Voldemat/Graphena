@@ -38,4 +38,5 @@ button.try{
     color:var(--white);
     border-radius: 50px;
     font-size:1.2em;
+    min-width: 100px;
 }

@@ -4,7 +4,7 @@ import * as d3 from 'd3';
 
 
 
-export default function useD3(callback, formula){
+export default function useD3(callback, depend){
     const [d3Node, setD3Node] = useState("");
     
     const initialNode = document.createElement("div");
@@ -12,7 +12,7 @@ export default function useD3(callback, formula){
     
     useEffect(() => {
         setD3Node(initialNode);
-    }, [formula])
+    }, depend)
 
     return d3Node;
 }

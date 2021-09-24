@@ -1,8 +1,10 @@
 /* Decor */
 main .bubble{
     position: absolute;
-    width:600px;
-    height:600px;
+    width:50vw;
+    height:50vw;
+    max-width: 700px;
+    max-height: 700px;
     border-radius: 50%;
     right:-100px;
     top:-100px;
@@ -28,4 +30,10 @@ main .formula .wrapper{
     height:100%;
     color:inherit;
     background-color: inherit;
+}
+
+
+
+@media screen and (max-width:780px){
+    .bubble{display:none}
 }

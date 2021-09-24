@@ -1,4 +1,3 @@
-
 /* Hide zeros on d3 axises */
 .graphic-box article svg g.tick[__data__="0"]{
     display: none;

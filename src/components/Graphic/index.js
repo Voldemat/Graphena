@@ -4,6 +4,7 @@ import rd3 from 'react-d3-library';
 
 import './styles.css';
 import useD3 from '../../hooks/useD3.js';
+import useScreenParams from '../../hooks/useScreenParams.js';
 
 function calculateInputData(minInput, maxInput){
     return d3.range(minInput, maxInput, 1);
@@ -11,10 +12,13 @@ function calculateInputData(minInput, maxInput){
 
 
 
-
+function convertVWinPX(vw, windowWidth) {
+	return windowWidth * vw / 100
+}
 export default function Graphic({formula}){
-    const width = 1000,
-          height = 400,
+    const [windowWidth, windowHeight] = useScreenParams();
+    const width = convertVWinPX(70, windowWidth);
+    const      height = 400,
           customScale=2;
     const data = useD3((d3, node) => {
         
@@ -77,7 +81,7 @@ export default function Graphic({formula}){
             })))
             .attr("stroke", "var(--royal-blue)")
             .attr("stroke-width", "3px")
-    }, formula)
+    }, [formula, width])
     return (<>
         <article>
             <rd3.Component data={data}/>

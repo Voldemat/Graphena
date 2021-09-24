@@ -1,9 +1,14 @@
 main .advertisement{
-    padding-right:40%;
+    text-align: left;
+    margin-right:45%;
+}
+@media screen and (max-width:780px){
+    main .advertisement{margin-right: 0;}
+    /* main .advertisement .icons{display:none !important} */
 }
 main .advertisement .wrapper{
-    display: flex;
-    align-items: center;
+    /* display: flex; */
+    /* align-items: center; */
 }
 main .advertisement .wrapper .icons{
     display: inline-block;
